@@ -34,10 +34,12 @@ In this paper, we release **TemFin**, a new temporal interaction graph benchmark
 ## Use TemFin and Run SEAN
 
 ### TemFin
-You can download the data from here. Put the `TemFin.csv` file in `./raw_data` and run the following command:
+You can download the data from [here](https://drive.google.com/drive/folders/1EoIVHqltWB4y9YyOPvJ61eNG3HybLkmv). Put the `TemFin.csv` file in `./raw_data` and run the following command:
 ```
 python preprocess_data.py --data TemFin
 ```
+We also provide the processed TemFin [here](https://drive.google.com/drive/folders/1SEVJlCbKdIFEuVjJPllrOrFRTku_AIsK), and you can put all the files into the `./data`.
+
 If you want to run on your own datasets, you have to convert your own data into our format, and run `preprocess_data.py` for your reference.
 
 ### SEAN for TIGE
