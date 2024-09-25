@@ -47,6 +47,6 @@ If you want to run on your own datasets, you have to convert your own data into 
 We integrate our SEAN into [TIGE](https://github.com/yzhang1918/www2023tiger ), and for the Temporal Link Prediction task, please run:
 
 ```
-train_self_supervised.py --data [DATA] --seed 0 --gpu 0
+python train_self_supervised.py --data [DATA] --seed 0 --gpu 0
 ```
 
