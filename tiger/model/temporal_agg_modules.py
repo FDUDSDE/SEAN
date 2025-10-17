@@ -443,7 +443,7 @@ class TemporalAttention(nn.Module):
         # compute value for the update gate
         cum_update_prob = cum_update_prob_prev + torch.min(update_prob_prev, 1. - cum_update_prob_prev)  # 这个batch原来的u_t
         # round
-        bn = binarylayer()
+        bn = BinaryLayer()
         update_gate = bn.apply(cum_update_prob)
         # apply update gate
         new_c = update_gate * cell_output + (1. - update_gate) * cell_new
